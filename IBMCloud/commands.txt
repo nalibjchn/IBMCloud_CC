@@ -1,0 +1,5 @@
+bluemix api https://api.eu-gb.bluemix.net
+bluemix login -u na.li2@ucdconnect.ie -o na.li2@ucdconnect.ie -s dev
+bluemix app push todo2524
+Location: London
+Space: dev

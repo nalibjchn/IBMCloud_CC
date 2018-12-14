@@ -1,0 +1,25 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+        <h3 style="color:aliceblue">Task List Project Author: Na Li</h3>
+    </div>
+    <div class="container">
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" action='/logout'>
+                <button type="submit" class="btn btn-success" style="background-color:#2196F3">Sign
+                    out</button>
+            </form>
+            <form class="navbar-form navbar-right" action='/signup'>
+                <button type="submit" class="btn btn-success" style="background-color:#2196F3" name="btnsignup">Sign
+                    up</button>
+            </form>
+            <form class="navbar-form navbar-right" action='/signin' method="POST">
+                <input type="txtUsername" name="txtUsername" id="txtUsername" class="form-control" placeholder="User Name">
+                <input type="password" placeholder="Password" name="txtPassword" id="txtPassword" class="form-control">
+                <button type="submit" class="btn btn-success" style="background-color:#2196F3" name="btnSignin">Sign
+                    in</button>
+            </form>
+        </div>
+        <!--/.navbar-collapse -->
+    </div>
+</nav>

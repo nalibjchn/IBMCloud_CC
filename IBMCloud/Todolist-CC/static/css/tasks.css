@@ -1,0 +1,13 @@
+    #panel{
+            padding: 20px;
+            background-color:#a7d1f3;
+            height: 420px;
+            width: 70%; 
+            left: 250px;
+            position: relative;
+            /* position: static; */
+            border: 2px solid #2196F3;       
+    }
+
+
+    

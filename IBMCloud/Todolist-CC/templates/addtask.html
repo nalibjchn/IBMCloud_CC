@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block sub_content %}
+<div class="jumbotron" style="width:60%; left:350px;position: relative; background-color:#a7d1f3;">
+    <form class="form" action="/addtask" method="POST">
+        Task Title: <input type="input" name="taskTitle" id="taskTitle" required autofocus>
+
+        Task Duedate: <input type="input" name="txtTaskDueDate" id="txtTaskDueDate" required autofocus>
+        <!-- <input type="datetime-local" name="txtTaskDueDate" id="txtTaskDueDate" class="form-control" require autofocus> -->
+        <br>
+        Description:<textarea class="form-control" id="txtTestDesc" name="txtTestDesc" rows="6"></textarea>
+        <!-- <textarea class="ckeditor" name="txtTestDesc"></textarea> -->
+        Comment:<textarea class="form-control" id="txtComment" name="txtComment" rows="6"></textarea>
+        <div class="col-sm-offset-2 col-sm-10">
+            <button style="background-color:#2196F3" type="Submit">Submit</button>
+        </div>
+        <br>
+    </form>
+</div>
+{% endblock %}

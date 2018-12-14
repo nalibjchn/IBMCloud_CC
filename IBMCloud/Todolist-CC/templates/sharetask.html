@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block sub_content %}
+
+<form action='/sharetask/{{task_id}}/{{task_name}}' method="POST">
+    <div class="container" style="background-color:#a7d1f3;width: 70%;height: 420px; padding: 20px; border: 2px solid #2196F3; ">
+        <div>
+            <h4> Share With Others</h4>
+            <br>
+            <div class="form-group">
+                <label for="taskname" sytle="text-align:left">Task Name:</label>
+               
+                <label for="taskname" sytle="text-align:left">{{task_name}}</label>
+                <br>
+                <label for="sharingopople" sytle="text-align:left">People:</label>
+                <input type="text" class="form-control" sytle="text-align:left" placeholder="Enter Names or Email Addresses..."
+                    name="sharingToPeople" />
+            </div>
+            <button class="btn btn-primary" type="Submit">Done</button>
+            <button type="button" class="btn btn-default">Close</button>
+        </div>
+    </div>
+</form>
+</div>
+{% endblock %}

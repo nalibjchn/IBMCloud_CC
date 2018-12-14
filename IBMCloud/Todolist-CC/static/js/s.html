@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Task To Do List Web Page">
+    <meta name="author" content="Na Li">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../static/css/tasks.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU'
+        crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../static/js/signInfor.js"></script>
+    <script src="../static/js/tasks.js"></script>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Task List Project</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                </button>
+                <!-- <label style="color:aliceblue" action = '/getCosokie' method = "POST">Wellocome</label> -->
+
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right" method="POST">
+                    <div class="form-group">
+                        <input type="txtUsername" name="txtUsername" id="txtUsername" class="form-control" placeholder="User Name"
+                            required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" name="txtPassword" id="txtPassword" class="form-control"
+                            require autofocus>
+                    </div>
+                    <button type="submit" class="btn btn-success" style="background-color:#2196F3" id="btnSignin">Sign
+                        in</button>
+                    <button type="submit" class="btn btn-success" style="background-color:#2196F3" id="btnSignup">Sign
+                        up</button>
+                </form>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
+
+
+    <!-- <script src="../static/js/signInfor.js"></script> -->
+    <div class="jumbotron">
+        <div class="col-md-3">
+            <h3>Todo Task Process Welcome </h4>
+        </div>
+    </div>
+    <div class="row marketing">
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-3">
+                    <h3><i class="far fa-clock" style="font: size 20px;color:#2196F3"></i><strong>&nbsp;To Do Task</strong></h3>
+                    <p>Create new Task</p>
+                    <a href="addtask" class="btn btn-info btn-mi" id="btntodo" style="background-color:#2196F3">
+                        <span class="glyphicon glyphicon-hand-up"></span> Add
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <h3><i class="fas fa-people-carry" style="font: size 20px;color:#2196F3"></i><strong>&nbsp;Doing
+                            Task</strong></h3>
+                    <p>Setting your doing task</p>
+                    <a href="updatetask" class="btn btn-info btn-mi" id="btndoing" style="background-color:#2196F3">
+                        <span class="glyphicon glyphicon-hand-up"></span> Setting
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <h3><i class="fas fa-handshake" style="font: size 20px;color:#2196F3"></i><strong>&nbsp;Done Task</strong></h3>
+                    <p> Completing your task here</p>
+                    <a href="updatetask" class="btn btn-info btn-mi" id="btndone" style="background-color:#2196F3">
+                        <span class="glyphicon glyphicon-hand-up"></span> Setting
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <h3><i class="fas fa-file-export" style="font: size 20px;color:#2196F3"></i><strong>&nbsp;Task List</strong></h3>
+                    <p>Show All Tasks</p>
+                    <p><a class="btn btn-default" href="tasklist" role="button" style="background-color:#2196F3; color:white">View
+                            details &raquo;</a></p>
+                </div>
+            </div>
+        </div><!-- /container -->
+    </div> <!-- /row marketing-->
+    <hr>
+
+
+
+    <!-- <div id="panel"> -->
+
+    <div class="jumbotron">
+        <form class="form" method="POST">
+            <div class="form-group">
+                Task Title: <input type="input" name="taskTitle" id="taskTitle" class="form-control" required autofocus>
+            </div>
+            <div class="form-group">
+                Task Duedate <input type="input" name="txtTaskDueDate" id="txtTaskDueDate" class="form-control"
+                    required autofocus>
+                <!-- <input type="datetime-local" name="txtTaskDueDate" id="txtTaskDueDate" class="form-control" require autofocus> -->
+            </div>
+            <br>
+            Description:
+            <form style="width: 50%">
+                <div class="form-group">
+                    <!-- <textarea class="ckeditor" name="txtTestDesc"></textarea> -->
+                    <textarea class="form-control" id="txtTestDesc" name="txtTestDesc" rows="6"></textarea>
+                </div>
+            </form>
+            <br>
+            Comment:
+            <form style="width: 50%">
+                <div class="form-group">
+                    <!-- <textarea class="ckeditor" name="txtComment"></textarea> -->
+                    <textarea class="form-control" id="txtComment" name="txtComment" rows="6"></textarea>
+                </div>
+            </form>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="Submit">Submit </button>
+                </div>
+            </div>
+            <!-- </form> -->
+    </div>
+
+    <!-- </div> -->
+    <hr>
+    <footer>
+        <p>&copy; 2018 Na Li, Cloud Computing.</p>
+    </footer>
+
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+mysql_host:     'cctodolist.cdlspdzeylrf.eu-west-1.rds.amazonaws.com'
+mysql_user:     'lindali_bjchn'
+mysql_password: '12345678'
+mysql_db:       'tododb'
+mysql_port:     3306

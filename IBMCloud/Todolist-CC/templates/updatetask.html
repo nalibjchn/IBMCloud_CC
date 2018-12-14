@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block sub_content %}
+<div id="panel">
+    <form class="form" action="/updatetask/{{task[0][5]}}" method="POST">
+        <div class="container">
+            <p></p>
+            <ul>
+                <li>Task Title:&nbsp;&nbsp;&nbsp;{{task[0][0]}}
+                </li><br>
+                <li>Task Status:
+                    <select name='selTaskSelected'>
+                        <option>---Please Select---</option>
+                        <option value="doing">Doing</option>
+                        <option value="todo">To Do</option>
+                        <option value="done">Done</option>
+                    </select>
+                </li>
+                <br>
+                <li>
+                    Due date:&nbsp;&nbsp;&nbsp;<input type="datetime-local" name="txtTaskDueDate" id="txtTaskDueDate"
+                        text="{{task[0][4]}}"></input>
+                </li>
+                <br>
+                <li>Description:{{task[0][2]}} </li>
+                <br>
+                <li>Comment:</li>
+                <div class="form-group">
+                    <textarea class="form-control" name="txtComment" rows="6" text="{{task[0][3]}}">{{task[0][2]}}</textarea>
+                </div>
+            </ul>
+            <div class="col-sm-10">
+                <!-- <button style="background-color:#2196F3" type="Submit">Update</button> -->
+                <button type="submit" class="btn btn-success" style="background-color:#2196F3">Update</button>
+                <!-- <button style="background-color:#2196F3" type="Submit">Update</button> -->
+            </div>
+
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,7 @@
+---
+applications:
+- name: Todolist-CC
+  random-route: true
+  memory: 64M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/python-buildpack

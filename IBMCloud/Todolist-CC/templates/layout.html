@@ -1,0 +1,24 @@
+{% extends "bootstrap/base.html" %}
+{% block head %}
+{% include "_head.html" %}
+{% endblock %}
+
+{% block title %}
+Task List for your Life
+{% endblock %}
+
+{% block navbar %}
+{% include "_navbar.html" %}
+{% endblock %}
+
+
+{% block content %}
+{% include "_mainfunction.html" %}
+{% include "_message.html" %}
+{% block sub_content %}
+{% endblock %}
+<hr>
+<footer>
+    <p>&copy; 2018 Na Li, Cloud Computing.</p>
+</footer>
+{% endblock %}

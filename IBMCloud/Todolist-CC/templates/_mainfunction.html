@@ -1,0 +1,45 @@
+<!-- <script src="../static/js/signInfor.js"></script> -->
+<div class="jumbotron">
+    <div class="col-md-3">
+        <h3>Todo Task Process Welcome {{session['username']}}</h4>
+    </div>
+</div>
+<div class="row marketing">
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-3">
+                <h3><i class="far fa-clock" style="font: size 20px;color:#2196F3"></i><strong>&nbsp;To Do Task</strong></h3>
+                <p>Create new Task</p>
+                <a href="/addtask" class="btn btn-info btn-mi" id="btntodo" style="background-color:#2196F3">
+                    <span class="glyphicon glyphicon-hand-up"></span> Add
+                </a>
+                <a href="/tasklist/todo" class="btn btn-info btn-mi" id="btndoing" style="background-color:#2196F3">
+                    <span class="glyphicon glyphicon-hand-up"></span> Setting
+                </a>
+            </div>
+            <div class="col-md-3">
+                <h3><i class="fas fa-people-carry" style="font: size 20px;color:#2196F3"></i><strong>&nbsp;Doing
+                        Task</strong></h3>
+                <p>Setting your doing task</p>
+                <a href="/tasklist/doing" class="btn btn-info btn-mi" id="btndoing" style="background-color:#2196F3">
+                    <span class="glyphicon glyphicon-hand-up"></span> Setting
+                </a>
+            </div>
+            <div class="col-md-3">
+                <h3><i class="fas fa-handshake" style="font: size 20px;color:#2196F3"></i><strong>&nbsp;Done Task</strong></h3>
+                <p> Completing your task here</p>
+                <a href="/tasklist/done" class="btn btn-info btn-mi" id="btndone" style="background-color:#2196F3">
+                    <span class="glyphicon glyphicon-hand-up"></span> Setting
+                </a>
+            </div>
+            <div class="col-md-3">
+                <h3><i class="fas fa-file-export" style="font: size 20px;color:#2196F3"></i><strong>&nbsp;Task List</strong></h3>
+                <p>Show All Tasks</p>
+                <p><a class="btn btn-default" href="/tasklist/all" role="button" style="background-color:#2196F3; color:white">View
+                        details &raquo;</a></p>
+            </div>
+        </div>
+    </div><!-- /container -->
+</div> <!-- /row marketing-->
+<hr>
