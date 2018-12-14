@@ -5,3 +5,5 @@ applications:
   memory: 64M
   instances: 1
   buildpack: https://github.com/cloudfoundry/python-buildpack
+  services:
+      - availability-monitoring-auto
